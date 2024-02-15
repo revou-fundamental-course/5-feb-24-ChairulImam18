@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Suhu</title>
+    <link rel="stylesheet" href="/5-feb-24-ChairulImam18/css/style.css" />
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="container">
+            <p id="title">
+                Kalkulator Suhu
+            </p>
+            <form>
+                <label for="celcius" id="labelC">Celcius (&#176;C)</label>
+                <textarea name="celcius" id="celcius" cols="50" rows="5" onfocus="removeClass()"
+                    class="input-field"></textarea>
+                <p id="err_msg">Message</p>
+
+                <div class="operations">
+                    <button type="button" class="convert" onclick="calculate()">
+                        Konversi
+                    </button>
+                    <button type="reset" class="reset" onclick="removeClass()">
+                        Reset
+                    </button>
+                    <button type="button" class="reverse" onclick="reserve()">
+                        Reverse
+                    </button>
+                </div>
+
+                <label for="fahrenheit" id="labelF">Fahrenheit (&#176;F)</label>
+                <textarea name="fahrenheit" id="fahrenheit" cols="50" rows="5" class="input-field"></textarea>
+
+                <label for="result">Rumus</label>
+                <textarea name="result" id="result" cols="50" rows="5"></textarea>
+            </form>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024
+    </footer>
+    <script src="/5-feb-24-ChairulImam18/js/script.js"></script>
+</body>
+
+</html>
